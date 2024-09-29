@@ -28,7 +28,7 @@ class RegistrationActivity : AppCompatActivity() {
             val password = binding.passwordEt.text.toString()
             val confirmPassword = binding.ConfirmPasswordEt.text.toString()
             if(email.isNotEmpty() && password.isNotEmpty() && confirmPassword.isNotEmpty()){
-                Toast.makeText(this@RegistrationActivity,"please fill the fields",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@RegistrationActivity,"register success",Toast.LENGTH_SHORT).show()
 
                 viewModel.signUp(email, password)
 
